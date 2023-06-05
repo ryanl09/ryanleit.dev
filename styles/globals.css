@@ -44,56 +44,6 @@ html,body{
   position:relative;
 }
 
-.animated-border-box {
-  width: calc(100% - 4rem);
-  position: absolute;
-  overflow: hidden; 
-  z-index: 0;
-  /* Border Radius */
-	border-radius: 10px;
-}
-
-.animated-border-box:before {
-  content: '';
-  z-index: -2;
-  text-align: center;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%) rotate(0deg);
-  position: absolute;
-	width: 999px;
-	height: 999px;
-	background-repeat: no-repeat;
-	background-position: 0 0;
-  /*border color, change middle color*/
-	background-image: conic-gradient(rgba(0,0,0,0), #734fc9, rgba(0,0,0,0) 25%);
-  /* change speed here */
-	animation: rotate 6s linear infinite;
-}
-
-.animated-border-box:after {
-	content: '';
-	position: absolute;
-	z-index: -1;
-  /* border width */
-	left: 3px;
-	top: 3px;
-  /* double the px from the border width left */
-	width: calc(100% - 6px);
-	height: calc(100% - 6px);
-  /*bg color*/
-	background: #212225;
-  /*box border radius*/
-	border-radius: 7px;
-}
-
-@keyframes rotate {
-	100% {
-		transform: translate(-50%, -50%) rotate(1turn);
-	}
-}
-
-
 .card-main {
   filter:drop-shadow(0px 5px 8px rgba(15,15,15.5));
 }
@@ -103,6 +53,10 @@ html,body{
   width:24px;
   height:24px;
   transition: .15s fill ease;
+}
+
+.socials svg:hover {
+  transform: scale(1.2);
 }
 
 .glowing{
@@ -217,6 +171,28 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.gradient {
+  border-radius: 4px;
+  padding:1px;
+}
+
+.gradient:hover {
+  background:linear-gradient(var(--angle), #734fc9, #121212);
+  animation: 2s rotate linear infinite;
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes rotate {
+  to {
+      --angle: 360deg;
+  }
 }
 
 @media (prefers-color-scheme: dark) {

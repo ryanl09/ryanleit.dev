@@ -12,6 +12,7 @@ module.exports = {
       '2/3': '1fr 2fr',
       '1': 'auto',
       '2': '1fr 1fr',
+      '3': '1fr 1fr 1fr',
       '4': '1fr 1fr 1fr 1fr'
     },
     colors: {

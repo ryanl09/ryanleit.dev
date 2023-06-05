@@ -6,7 +6,7 @@ import HomeCard from '@/components/CardHome';
 import { AiOutlineCalendar } from 'react-icons/ai';
 import { BiChevronDown} from 'react-icons/bi';
 import { FaBook, FaUniversity, FaGraduationCap } from 'react-icons/fa';
-import { SiNextdotjs, SiCsharp, SiPhp,SiCss3,SiHtml5, SiReact, SiPostgresql, SiAmazonaws } from 'react-icons/si';
+import { SiNextdotjs, SiCsharp, SiPhp,SiCss3,SiHtml5, SiReact, SiPostgresql, SiAmazonaws, SiWordpress, SiNeo4J, SiTailwindcss, SiNodedotjs, SiGit} from 'react-icons/si';
 import { TbBrandMysql } from 'react-icons/tb';
 
 export default function Home() {
@@ -62,7 +62,7 @@ export default function Home() {
             <div className='flex flex-col gap-4 items-center justify-center h-full'>
               <div className="flex flex-col gap-4">
                 <div className='flex justify-center items-center rounded-full'>
-                  <Image src='/img/self.jpg' width='80' height='80' alt="Ryan" className='rounded-full avatar'/>
+                  <Image src='/img/self2.jpg' width='80' height='80' alt="Ryan" className='rounded-full avatar'/>
                 </div>
                 <div>
                   <div className='grid grid-cols-1 text-2xl md:text-4xl font-semibold stack glowing text-[#ccc]'>
@@ -97,7 +97,7 @@ export default function Home() {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
                 <HomeCard title="University" icons={[FaUniversity]}>
-                  <span>UPJ</span>
+                  <span>University of Pittsburgh at Johnstown</span>
                 </HomeCard>
                 <HomeCard title="Duration" icons={[AiOutlineCalendar]}>
                   <span>Aug 2019 - Apr 2023</span>
@@ -113,29 +113,41 @@ export default function Home() {
                 <p className="text-xl selected">Technology</p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
+                <HomeCard title="AWS" icons={[SiAmazonaws]}>
+                  <span>1 year</span>
+                </HomeCard>
+                <HomeCard title="CSS" icons={[SiCss3, SiTailwindcss]}>
+                  <span>3 years</span>
+                </HomeCard>
+                <HomeCard title="C#" icons={[SiCsharp]}>
+                  <span>1 year</span>
+                </HomeCard>
+                <HomeCard title="Git" icons={[SiGit]}>
+                  <span>3 years</span>
+                </HomeCard>
                 <HomeCard title="HTML" icons={[SiHtml5]}>
                   <span>3 years</span>
                 </HomeCard>
-                <HomeCard title="CSS" icons={[SiCss3]}>
+                <HomeCard title="Neo4J" icons={[SiNeo4J]}>
+                  <span>1 year</span>
+                </HomeCard>
+                <HomeCard title="Next.js" icons={[SiNextdotjs]}>
+                  <span>2 years</span>
+                </HomeCard>
+                <HomeCard title="Node.js" icons={[SiNodedotjs]}>
+                  <span>3 years</span>
+                </HomeCard>
+                <HomeCard title="PHP" icons={[SiPhp]}>
                   <span>3 years</span>
                 </HomeCard>
                 <HomeCard title="React.js" icons={[SiReact]}>
                   <span>3 years</span>
                 </HomeCard>
-                <HomeCard title="Next.js" icons={[SiNextdotjs]}>
-                  <span>2 years</span>
-                </HomeCard>
-                <HomeCard title="C#" icons={[SiCsharp]}>
-                  <span>1 year</span>
-                </HomeCard>
-                <HomeCard title="PHP" icons={[SiPhp]}>
-                  <span>3 years</span>
-                </HomeCard>
                 <HomeCard title="SQL" icons={[TbBrandMysql, SiPostgresql]}>
                   <span>3 years</span>
                 </HomeCard>
-                <HomeCard title="AWS" icons={[SiAmazonaws]}>
-                  <span>1 year</span>
+                <HomeCard title="WordPress" icons={[SiWordpress]}>
+                  <span>3 years</span>
                 </HomeCard>
               </div>
             </div>
