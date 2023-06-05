@@ -17,7 +17,7 @@ export default function Experience() {
                     </span>
                 </a>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-6 px-8'>
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-6 px-4 md:px-8'>
                 <div>
                     <div className='selected font-medium text-lg'>Work Experience</div>
                     <Work
