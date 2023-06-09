@@ -21,19 +21,18 @@ export default function Experience() {
                 <div>
                     <div className='selected font-medium text-lg'>Work Experience</div>
                     <Work
-                        title="Sourceree"
-                        from="Jan 2023"
-                        role="Software Engineer"
-                        location="Ebensburg, PA">
-
+                        title="The Esport Company"
+                        from="June 2021"
+                        role="Fullstack Developer"
+                        location="Johnstown, PA">
                     </Work>
                     <Bar />
                     <Work
-                        title="The Esport Company"
-                        from="June 2021"
-                        to="April 2023"
-                        role="Fullstack Developer"
-                        location="Johnstown, PA">
+                        title="Sourceree"
+                        from="Jan 2023"
+                        to="June 2023"
+                        role="Software Engineer Intern"
+                        location="Ebensburg, PA">
 
                     </Work>
                     <Bar />
