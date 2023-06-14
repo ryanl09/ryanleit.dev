@@ -10,7 +10,7 @@ export default function Experience() {
         <Content padding={false} hiddenElement={false}>
             <div className='h-[60px] w-full'></div>
             <div className='flex items-center justify-center py-6'>
-                <a href="/resume6-5-2023.pdf" target="_blank" rel="noopener noreferrer">
+                <a href="/resume6-14-2023.pdf" target="_blank" rel="noopener noreferrer">
                     <span className='flex items-center gap-2 text-[#678cdb] font-medium underline'>
                         <AiOutlineCloudDownload />
                         View / Download Resume
