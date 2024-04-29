@@ -18,8 +18,15 @@ export default function Experience() {
                 </a>
             </div>
             <div className='grid grid-cols-12 gap-6 px-4 md:px-8'>
-                <div className='col-span-12 sm:col-span-6'>
+                <div className='col-span-12 sm:col-span-6 md:col-span-4'>
                     <div className='selected font-medium text-lg'>Work Experience</div>
+                    <Work
+                        title="DirecTec LLC"
+                        from="Jan 2024"
+                        role="Systems Engineer"
+                        location="Hollsopple, PA">
+                    </Work>
+                    <Bar />
                     <Work
                         title="The Esport Company"
                         from="June 2021"
@@ -33,39 +40,39 @@ export default function Experience() {
                         to="June 2023"
                         role="Software Engineer Intern"
                         location="Ebensburg, PA">
-
                     </Work>
                     <Bar />
                     <Work
                         title="General Cleaning Service"
                         from="May 2016"
+                        to="May 2023"
                         role="Part Time Cleaner"
                         location="Johnstown, PA">
 
                     </Work>
                 </div>
-                <div>
+                <div className='col-span-12 sm:col-span-6 md:col-span-4'>
                     <div className='selected font-medium text-lg'>Personal Projects</div>
                     <Project
                         title="CollabRoom"
                         href="https://collabroom.app"
-                        tech={['Next.js', 'React.js', 'Tailwind CSS']}>
+                        tech={['Next.js', 'React.js', 'Tailwind CSS', 'MySQL']}>
                             A website focused on allowing music producers, vocalists, and audio engineers to easily find each other based on artist types and the genres they make.
                     </Project>
                     <Bar />
                     <Project
                         title="GymSocial"
-                        href="https://gymsocial.swiles.tech"
+                        href={null}
                         tech={['Next.js', 'React.js', 'GraphQL', 'PostreSQL', 'Docker']}>
                             A website that allows fitness-enthusiasts to keep track of their workouts and find others.
                     </Project>
                 </div>
-                <div>
+                <div className='col-span-12 sm:col-span-6 md:col-span-4'>
                     <div className='selected font-medium text-lg'>Volunteer Experience</div>
                     
                     <Work
                         title="Richland AYSO"
-                        from="May 2017"
+                        from="July 2013"
                         role="Board Member / Referee / Coach"
                         location="Johnstown, PA">
 

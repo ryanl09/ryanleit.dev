@@ -16,7 +16,7 @@ export default function Project({title, href, tech=[], children}) {
                 )}
             </div>
             <div className='flex flex-col gap-1 mt-1'>
-                <p className='text-sm font-medium text-white/85'>DESCRIPTION</p>
+                <p className='text-xs font-medium text-white/80'>Description</p>
                 <p className='text-sm text-white/70'>{children}</p>
             </div>
             {tech.length > 0 && <div className='flex flex-col gap-1 mt-2'>

@@ -7,14 +7,6 @@ module.exports = {
   theme: {
     extend: {
     },
-    gridTemplateColumns: {
-      '1/3': '2fr 1fr',
-      '2/3': '1fr 2fr',
-      '1': 'auto',
-      '2': '1fr 1fr',
-      '3': '1fr 1fr 1fr',
-      '4': '1fr 1fr 1fr 1fr'
-    },
     colors: {
       'purple':'#734fc9',
       'purple-h':'#3b805b',
