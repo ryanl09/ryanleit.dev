@@ -9,8 +9,8 @@ export default function Home() {
 
   const [scrollTop, setScrollTop] = useState<boolean>(false);
 
-  const top = useRef<HTMLDivElement|null>(null);
-  const bottom = useRef<HTMLDivElement|null>();
+  const top = useRef<any>(null);
+  const bottom = useRef<any>(null);
 
   function doScroll() {
     if (scrollTop){

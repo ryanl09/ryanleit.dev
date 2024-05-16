@@ -1,13 +1,14 @@
 import { WorkProject } from '@/global/types';
 import React from 'react';
 
-export default function Work({title, role, from, location, to, projects }: {
+export default function Work({ title, role, from, location, to, projects, children }: {
     title: string;
     role: string;
     from: string;
     location: string;
     to?: string;
     projects?: WorkProject[];
+    children?: React.ReactNode;
 }) {
     return (
         <div>

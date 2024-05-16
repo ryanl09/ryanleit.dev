@@ -1,10 +1,10 @@
 import React from 'react';
 
-export default function HomeCard({ title, icons, children, solidBg=false }: {
+export default function HomeCard({ title, icons, children, solidBg }: {
     title: string;
     icons: any[];
     children: React.ReactNode;
-    solidBg: boolean;
+    solidBg?: boolean;
 }) {
     return (
         <div className={`p-3 rounded-md border-2 border-gr ${solidBg ? 'bg-dg-100' : ''}`}>
