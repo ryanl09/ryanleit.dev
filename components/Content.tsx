@@ -4,7 +4,11 @@ import { Raleway } from 'next/font/google'
 
 const raleway = Raleway({ subsets: ['latin'], weight:['400', '500', '600', '700', '800']});
 
-export default function Content({children, padding, hiddenElement=true}) {
+export default function Content({ children, padding, hiddenElement=true }: {
+    children: React.ReactNode;
+    padding: boolean;
+    hiddenElement: boolean;
+}) {
     return (
         <div className='h-screen'>
             <Nav />

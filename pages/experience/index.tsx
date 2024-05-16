@@ -4,6 +4,12 @@ import Content from '@/components/Content';
 import Project from '@/components/Project';
 import Work from '@/components/Work';
 import { AiOutlineCloudDownload } from 'react-icons/ai';
+import { WorkProject } from '@/global/types';
+
+const direcTecProjects: WorkProject[] = [{
+    title: '',
+    url: '',
+}];
 
 export default function Experience() {
     return (
@@ -24,14 +30,25 @@ export default function Experience() {
                         title="DirecTec LLC"
                         from="Jan 2024"
                         role="Systems Engineer"
-                        location="Hollsopple, PA">
+                        location="Hollsopple, PA"
+                        projects={[{
+                            title: '',
+                            url: '',
+                        },{
+                            title: '',
+                            url: '',
+                        }]}>
                     </Work>
                     <Bar />
                     <Work
                         title="The Esport Company"
                         from="June 2021"
                         role="Fullstack Developer"
-                        location="Johnstown, PA">
+                        location="Johnstown, PA"
+                        projects={[{
+                            title: '',
+                            url: '',
+                        }]}>
                     </Work>
                     <Bar />
                     <Work
@@ -48,7 +65,6 @@ export default function Experience() {
                         to="May 2023"
                         role="Part Time Cleaner"
                         location="Johnstown, PA">
-
                     </Work>
                 </div>
                 <div className='col-span-12 sm:col-span-6 md:col-span-4'>

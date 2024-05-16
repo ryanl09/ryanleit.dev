@@ -12,7 +12,7 @@ export default function Nav() {
 
     return (
         <div className='h-[60px] flex items-center overflow-hidden shadow-nav p-2 fixed top-0 w-full bg-dg-100 z-50'>
-            <NavItem href="https://github.com/ryanl09/ryanleit.dev" target="_blank">
+            <NavItem href="https://github.com/ryanl09/ryanleit.dev" selected={false}>
                 <div className='flex items-center gap-2 glowing'>
                     <BiCodeAlt />
                     <span>ryanleit.dev</span>

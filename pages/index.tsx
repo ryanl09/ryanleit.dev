@@ -2,19 +2,15 @@ import React, { useRef, useState, useEffect } from 'react';
 import Image from 'next/image';
 import Content from '@/components/Content';
 import Socials from '@/components/Socials';
-import HomeCard from '@/components/CardHome';
-import { AiOutlineCalendar } from 'react-icons/ai';
 import { BiChevronDown} from 'react-icons/bi';
-import { FaBook, FaUniversity, FaGraduationCap } from 'react-icons/fa';
-import { SiNextdotjs, SiCsharp, SiPhp,SiCss3,SiHtml5, SiReact, SiPostgresql, SiAmazonaws, SiWordpress, SiNeo4J, SiTailwindcss, SiNodedotjs, SiGit} from 'react-icons/si';
-import { TbBrandMysql } from 'react-icons/tb';
+import Education from '@/components/sections/home/Education';
 
 export default function Home() {
 
-  const [scrollTop, setScrollTop] = useState(false);
+  const [scrollTop, setScrollTop] = useState<boolean>(false);
 
-  const top = useRef();
-  const bottom = useRef();
+  const top = useRef<HTMLDivElement|null>(null);
+  const bottom = useRef<HTMLDivElement|null>();
 
   function doScroll() {
     if (scrollTop){
@@ -95,61 +91,7 @@ export default function Home() {
               <div className=''>
                 <p className="text-xl selected">Education</p>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
-                <HomeCard title="University" icons={[FaUniversity]}>
-                  <span>University of Pittsburgh at Johnstown</span>
-                </HomeCard>
-                <HomeCard title="Duration" icons={[AiOutlineCalendar]}>
-                  <span>Aug 2019 - Apr 2023</span>
-                </HomeCard>
-                <HomeCard title="Major" icons={[FaBook]}>
-                  <span>Computer Science</span>
-                </HomeCard>
-                <HomeCard title="GPA" icons={[FaGraduationCap]}>
-                  <span>3.79</span>
-                </HomeCard>
-              </div>
-              <div className=''>
-                <p className="text-xl selected">Technology</p>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
-                <HomeCard title="AWS" icons={[SiAmazonaws]}>
-                  <span>2 years</span>
-                </HomeCard>
-                <HomeCard title="CSS" icons={[SiCss3, SiTailwindcss]}>
-                  <span>3 years</span>
-                </HomeCard>
-                <HomeCard title="C#" icons={[SiCsharp]}>
-                  <span>1 year</span>
-                </HomeCard>
-                <HomeCard title="Git" icons={[SiGit]}>
-                  <span>3 years</span>
-                </HomeCard>
-                <HomeCard title="HTML" icons={[SiHtml5]}>
-                  <span>3 years</span>
-                </HomeCard>
-                <HomeCard title="Neo4J" icons={[SiNeo4J]}>
-                  <span>1 year</span>
-                </HomeCard>
-                <HomeCard title="Next.js" icons={[SiNextdotjs]}>
-                  <span>2 years</span>
-                </HomeCard>
-                <HomeCard title="Node.js" icons={[SiNodedotjs]}>
-                  <span>3 years</span>
-                </HomeCard>
-                <HomeCard title="PHP" icons={[SiPhp]}>
-                  <span>3 years</span>
-                </HomeCard>
-                <HomeCard title="React.js" icons={[SiReact]}>
-                  <span>3 years</span>
-                </HomeCard>
-                <HomeCard title="SQL" icons={[TbBrandMysql, SiPostgresql]}>
-                  <span>3 years</span>
-                </HomeCard>
-                <HomeCard title="WordPress" icons={[SiWordpress]}>
-                  <span>3 years</span>
-                </HomeCard>
-              </div>
+              <Education />
             </div>
           </div>
         </div>

@@ -1,7 +1,9 @@
 import React from 'react';
 
-export default function Bar() {
+const Bar = () => {
     return (
         <div className='my-2 w-full h-[1px] bg-gr'></div>
     );
 }
+
+export default Bar;

@@ -1,7 +1,12 @@
 import React from 'react';
 import { BiLinkExternal } from 'react-icons/bi';
 
-export default function Project({title, href, tech=[], children}) {
+export default function Project({ title, href, tech=[], children }: {
+    title: string;
+    href: string|null;
+    tech: string[];
+    children: React.ReactNode;
+}) {
     return (
         <div>
             <div className='flex items-center pt-2'>
@@ -22,7 +27,7 @@ export default function Project({title, href, tech=[], children}) {
             {tech.length > 0 && <div className='flex flex-col gap-1 mt-2'>
                 <p className='text-sm font-medium text-white/85'>USES</p>
                 <div className='flex gap-2'>
-                    {tech.map(e => {
+                    {tech.map((e: string) => {
                         return (
                             <div key={`${title}-${e}`} className='text-sm font-medium px-2 rounded-sm bg-gr'>
                                 {e}

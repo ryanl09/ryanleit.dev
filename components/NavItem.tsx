@@ -1,7 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
 
-export default function NavItem({href=null, children, className='', selected=false}) {
+export default function NavItem({ href=null, children, className='', selected=false }: {
+    href: string|null;
+    children: React.ReactNode;
+    className?: string;
+    selected: boolean;
+}) {
 
     return (
         <div className={`h-full --text flex items-center font-medium text-white/80 hover:text-white ${className}`}>
