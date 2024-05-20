@@ -14,9 +14,7 @@ export default function Content({ children, padding, hiddenElement=true }: {
             <Nav />
             {hiddenElement && <div className='h-[60px]'></div>}
 
-            <div className={padding?'px-6 md:px-80 py-6':''} style={{
-                height: padding ? '' : 'calc(100% - 60px)'
-            }}>
+            <div className={padding?'px-6 md:px-80 py-6':''}>
                 {children}
             </div>
         </div>

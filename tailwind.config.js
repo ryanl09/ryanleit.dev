@@ -17,7 +17,11 @@ module.exports = {
       'dg-500': '#7A7A8A',
       'white':'#fff',
       'gr': '#373737',
-      'black':'#000'
+      'black':'#000',
+      'chess-primary': '#f5edc4',
+      'chess-secondary': '#5b7549',
+      'music-primary': '#eceff9',
+      'music-secondary': '#734fc9',
     },
     boxShadow: {
       'nav':'1px 1px 8px 2px #0c0c0c'
