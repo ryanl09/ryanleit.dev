@@ -11,7 +11,7 @@ const SectionChess = () => {
             <div className="col-span-8 p-6 text-chess-primary">
                 <p className="text-[54px] font-bold drop-shadow-sm">Chess</p>
                 <Link rel='noopener noreferrer' target='_blank' href='https://chess.com/tecryan' className='flex items-center gap-2'>
-                    Click here to view my profile
+                    Click here to view my profile on chess.com
                     <BiLinkExternal />
                 </Link>
             </div>
