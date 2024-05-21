@@ -6,6 +6,7 @@ import { BiChevronDown} from 'react-icons/bi';
 import Education from '@/components/sections/home/Education';
 import SectionChess from '@/components/sections/home/SectionChess';
 import SectionMusic from '@/components/sections/home/SectionMusic';
+import SectionClash from '@/components/sections/home/SectionClash';
 
 export default function Home() {
 
@@ -58,16 +59,17 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={`rounded-xl overflow-hidden mx-6 md:mx-[4.5rem]`}>
-        <SectionChess />
-      </div>
-
-      <div className='grid grid-cols-12 gap-4 mx-6 md:mx-[4.5rem]'>
-        <div className='rounded-xl overflow-hidden col-span-4'>
-          <div></div>
+      <div className="grid grid-cols-12 gap-4 mx-6 md:mx-[4.5rem] ">
+        <div className={`rounded-xl overflow-hidden col-span-12 md:col-span-6`}>
+          <SectionChess />
         </div>
-        <div className='rounded-xl overflow-hidden col-span-8'>
-          
+
+        <div className='rounded-xl col-span-12 md:col-span-6'>
+          <SectionMusic />
+        </div>
+        
+        <div className='rounded-xl col-span-12 md:col-span-6'>
+          <SectionClash />
         </div>
       </div>
     </Content>
