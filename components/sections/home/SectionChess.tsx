@@ -11,7 +11,7 @@ const SectionChess = () => {
             transition: '.04s height ease',
         }}>
             <div className="p-4 text-chess-primary z-[2] relative">
-                <p className="text-[54px] font-bold drop-shadow-sm">Chess</p>
+                <p className="text-[34px] font-bold drop-shadow-sm">Chess</p>
                 <Link rel='noopener noreferrer' target='_blank' href='https://chess.com/tecryan' className='flex items-center gap-2 underline
                     text-chess-primary/70'>
                     My profile

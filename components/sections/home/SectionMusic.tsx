@@ -6,14 +6,13 @@ const orbitron = Orbitron({ subsets: ['latin'], weight: ['400', '700', '800', '9
 
 const SectionMusic = () => {
     return (
-        <div className={`bg-chess-secondary relative rounded-xl`} style={{
-            background: 'radial-gradient(circle at 40% 5%, rgb(50, 28, 45) 5%, rgb(21, 4, 24) 45%, rgb(61, 17, 23) 100%)',
+        <div className={`relative drop-shadow-md rounded-xl`} style={{
+            background: 'radial-gradient(circle at 40% 5%, rgb(12, 3, 43) 2%, rgb(50, 28, 45) 5%, rgb(21, 4, 24) 45%, rgb(61, 17, 23) 100%)',
             height: 'clamp(180px, 20vw, 200px)',
             transition: '.04s height ease',
-            boxShadow: '0px 2px 14px 1px rgb(65, 39, 67)'
         }}>
             <div className="p-4 text-music-primary">
-                <p className={`text-[54px] font-semibold drop-shadow-sm ${orbitron.className}`}>Music</p>
+                <p className={`text-[34px] font-semibold drop-shadow-sm ${orbitron.className}`}>Music</p>
                 <p className="text-sm text-music-primary/70">EDM Producer & DJ</p>
             </div>
             <div className="socials flex justify-end mr-4">
