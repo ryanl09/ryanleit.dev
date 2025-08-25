@@ -1,5 +1,7 @@
 import '@/styles/globals.css'
 import { ThemeProvider } from '@/components/theme-provider'
+import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 export const metadata = {
   title: 'Ryan Leitenberger - Full Stack Developer',
@@ -22,6 +24,8 @@ export default function RootLayout({
         >
           <div className="xs:px-5 sm:px-10 md:px-20 py-10">
             {children}
+            <Analytics />
+            <SpeedInsights />
           </div>
         </ThemeProvider>
       </body>
