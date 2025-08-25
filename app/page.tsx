@@ -20,13 +20,13 @@ const stackItems: TechStackItem[] = [
     { title: 'HTML', years: 4, icon: BiLogoHtml5 },
     { title: 'CSS', years: 4, icon: BiLogoCss3 },
     { title: 'JavaScript', years: 4, icon: BiLogoJavascript },
-    { title: 'TypeScript', years: 3, icon: BiLogoTypescript },
-    { title: 'React', years: 4, icon: BiLogoReact },
-    { title: 'Next.js', years: 3, icon: RiNextjsFill },
     { title: 'MySQL', years: 4, icon: SiMysql },
+    { title: 'TypeScript', years: 3, icon: BiLogoTypescript },
+    { title: 'React', years: 3, icon: BiLogoReact },
+    { title: 'Next.js', years: 3, icon: RiNextjsFill },
     { title: 'Tailwind CSS', years: 3, icon: BiLogoTailwindCss },
     { title: 'PHP', years: 2, icon: BiLogoPhp },
-    { title: 'GraphQL', years: 2, icon: BiLogoGraphql },
+    { title: 'GraphQL', years: 1, icon: BiLogoGraphql },
 ]
 
 type PortfolioItem = {

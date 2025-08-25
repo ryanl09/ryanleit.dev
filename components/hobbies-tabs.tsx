@@ -26,12 +26,6 @@ export default function HobbiesTabs() {
                         Clash Royale
                     </div>
                 </TabsTrigger>
-                <TabsTrigger value="marvel-rivals">
-                    <div className="flex items-center gap-2">
-                        <Image src="/img/rivals-logo.webp" alt="Marvel Rivals" width={20} height={20} />
-                        Marvel Rivals
-                    </div>
-                </TabsTrigger>
             </TabsList>
 
             <TabsContent value="music" className="mt-4">
@@ -40,10 +34,6 @@ export default function HobbiesTabs() {
             
             <TabsContent value="clash-royale" className="mt-4" forceMount>
                 <RoyaleTab isActive={activeTab === "clash-royale"} />
-            </TabsContent>
-
-            <TabsContent value="marvel-rivals" className="mt-4" forceMount>
-                <RivalsTab isActive={activeTab === "marvel-rivals"} />
             </TabsContent>
         </Tabs>
     )
