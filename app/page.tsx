@@ -115,14 +115,14 @@ export default async function HomePage() {
                 <div className="col-span-12 md:col-span-6 space-y-4">
                     <div className="mt-4 space-y-2">
                         <h2 className="text-2xl font-semibold">About Me</h2>
-                        <p className="text-muted-foreground">I'm a software developer with a passion for building web applications that both work good and look good.</p>
+                        <p className="text-muted-foreground">I'm a software developer with a passion for building web applications that combine seamless functionality with a clean and modern design.</p>
                         <p className="text-muted-foreground">I studied computer science at the University of Pittsburgh at Johnstown from August 2019 - April 2023.</p>
                     </div>
 
                     <div className="flex items-center gap-4">
                         <ContactDialog />
 
-                        <Link href="/Ryan%20Leitenberger%20Resume%2008-25.pdf" target="_blank" rel="noopener noreferrer">
+                        <Link href="/Ryan%20Leitenberger%20Resume%208-25.pdf" target="_blank" rel="noopener noreferrer">
                             <Button variant="outline">
                                 <BiFile />
                                 Resume
